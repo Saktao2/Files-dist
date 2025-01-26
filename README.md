@@ -47,18 +47,15 @@ Make sure you have the following installed:
 
 ---
 
-### 🛠️ Usage
 
-Build the Project:
+### 🛠️ Usage  
 
-To bundle and optimize the files, run    
 
-```bash
+1. Build the Project, To bundle and optimize the files, run  run: 
+   ```bash
    npx webpack
 
-
 ---
-
 
 This will create the dist/ folder
 
@@ -70,14 +67,12 @@ This project is licensed under the MIT License.
 Credits to: https://webpack.js.org
 
 ---
-### Aditional to "protect your code"
 
-insert this script tag in your html file before of the end of the </body> tag
+### Aditional to "protect your code" 
 
-```bash
-
-    <script>
-        document.addEventListener('contextmenu', function (e) {
+1. insert this script tag in your html file before of the end of the </body> tag
+   ```bash
+           document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         });
 
@@ -94,4 +89,5 @@ insert this script tag in your html file before of the end of the </body> tag
                 location.reload();
             }
         });
-    </script>
+
+---
