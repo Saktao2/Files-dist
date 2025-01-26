@@ -70,7 +70,7 @@ Credits to: https://webpack.js.org
 
 ### Aditional to "protect your code" 
 
-1. insert this script tag in your html file before of the end of the </body> tag
+1. insert this script tag in your html file before of the end of the body tag
    ```bash
            document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
