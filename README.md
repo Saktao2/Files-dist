@@ -57,6 +57,8 @@ To bundle and optimize the files, run
    npx webpack
 
 
+---
+
 
 This will create the dist/ folder
 
