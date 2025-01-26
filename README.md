@@ -51,7 +51,7 @@ Make sure you have the following installed:
 ### 🛠️ Usage  
 
 
-1. Build the Project, To bundle and optimize the files, run  run: 
+1. Build the Project, To bundle and optimize the files,  run: 
    ```bash
    npx webpack
 
