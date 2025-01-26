@@ -4,21 +4,6 @@ This project demonstrates how to use Webpack to bundle and optimize a simple web
 
 ---
 
-## 📂 File Structure  
-
-files-dist/ 
-├── dist/ # Output folder (created after build)
-├── node_modules/ # Installed dependencies
-├── src/ # Source files
-│ ├── index.html # Main HTML file
-│ ├── style.css # Main CSS file
-│ └── script.js # Main JavaScript file
-├── package.json # Project configuration and scripts
-├── webpack.config.js # Webpack configuration
-└── README.md # Project documentation
-
----
-
 ## 🚀 Features: What It Does  
 
 - **JavaScript Bundling**:  
@@ -40,7 +25,6 @@ files-dist/
   - Minification of JavaScript.  
   - Tree-shaking to remove unused code.  
   - Better performance and smaller bundle size.  
-
 
 
 ---
@@ -67,7 +51,10 @@ Make sure you have the following installed:
 
 Build the Project:
 
-To bundle and optimize the files, run npx webpack
+To bundle and optimize the files, run    ```bash
+   npx webpack
+
+---
 
 This will create the dist/ folder
 
@@ -77,3 +64,32 @@ This will create the dist/ folder
 This project is licensed under the MIT License.
 
 Credits to: https://webpack.js.org
+
+---
+### Aditional to "protect your code"
+
+insert this script tag in your html file before of the end of the </body> tag
+
+```bash
+
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+                (e.metaKey && e.altKey && e.key === 'I') ||
+                (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+                (e.ctrlKey && e.key === 'U')
+            ) {
+                e.preventDefault();
+                e.stopPropagation();
+                location.reload();
+            }
+        });
+    </script>
+    
+---
