@@ -51,10 +51,12 @@ Make sure you have the following installed:
 
 Build the Project:
 
-To bundle and optimize the files, run    ```bash
+To bundle and optimize the files, run    
+
+```bash
    npx webpack
 
----
+
 
 This will create the dist/ folder
 
@@ -91,5 +93,3 @@ insert this script tag in your html file before of the end of the </body> tag
             }
         });
     </script>
-    
----
